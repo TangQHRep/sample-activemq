@@ -43,3 +43,7 @@ Thumbs.db
 *.iws
 *.iml
 *.ipr
+
+# 忽略所有生成的 log文件,
+
+*.log
