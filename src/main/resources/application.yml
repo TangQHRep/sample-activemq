@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+
+logging:
+  config: classpath:log4j2.xml
+
+spring:
+  activemq:
+    #是否使用内置模式
+    in-memory: true
+    #使用外置模式时再配置：用户名、密码、uel
+    #user: admin
+    #password: admin
+    #broker-url: tcp://121.41.167.75:19901
+    broker:
+      name: Tang
+      persistent: false
+      use-jmx: true
+    pool:
+      enabled: false
+    packages:
+      trust-all: true
