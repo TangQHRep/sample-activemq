@@ -61,9 +61,9 @@ public class ActiveMQConfig {
 
             broker.start();
             return broker;
-        } catch (Exception var4) {
-            var4.printStackTrace();
-            log.error(var4.getMessage());
+        } catch (Exception e) {
+            e.printStackTrace();
+            log.error(e.getMessage());
             throw new RuntimeException("------内置ActiveMQ启动失败！-----------------------------");
         }
     }
