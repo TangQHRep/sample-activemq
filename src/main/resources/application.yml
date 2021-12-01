@@ -13,6 +13,8 @@ spring:
     #user: admin
     #password: admin
     #broker-url: tcp://121.41.167.75:19901
+    #activemq集群 需要配合zookeeper进行配置
+    #broker-url: failover:(tcp://10.243.67.246:61616,tcp://10.243.67.188:61616,tcp://10.243.67.70:61616)?randomize=false
     broker:
       name: Tang
       persistent: false
